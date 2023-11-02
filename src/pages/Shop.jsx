@@ -1,7 +1,10 @@
+import Hero from "../components/hero/Hero"
 
 const Shop = () => {
   return (
-    <div>Shop</div>
+    <div>
+      <Hero />
+    </div>
   )
 }
 
