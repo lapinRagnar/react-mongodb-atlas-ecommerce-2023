@@ -43,6 +43,10 @@
   border-top: #491a4c 3px solid; 
 }
 
+.nav-menu li a {
+  text-decoration: none;
+}
+
 .nav-menu hr{
   border: none;
   width: 80%;
@@ -82,8 +86,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: -55px;
+  margin-left: 30px;
   border-radius: 11px;
   font-size: 24px;
   background: red;
