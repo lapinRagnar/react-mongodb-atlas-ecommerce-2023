@@ -3,15 +3,15 @@ import Breadcrum from "../components/breadcrums/Breadcrum"
 import ProductDisplay from "../components/productDisplay/ProductDisplay"
 import DescriptionBox from "../components/descriptionBox/DescriptionBox"
 import RelatedProducts from "../components/relatedProducts/RelatedProducts"
+import { useContext } from "react"
+import { ShopContext } from "../context/ShopContext"
 
 
-const Product = (props) => {
+const Product = () => {
 
-  const {all_product} = props
-  console.log('all_product dans Product.jsx', all_product)
+  const {all_product} = useContext(ShopContext)
 
   let {productId} = useParams()
-  console.log('porductId', productId)
 
   const product = all_product.find(product => product.id == Number(productId))
   console.log('product', product)

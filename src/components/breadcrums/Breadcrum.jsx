@@ -3,7 +3,7 @@ import arrow_icon from '../assets/breadcrum_arrow.png'
 const Breadcrum = (props) => {
 
   const {product} = props
-  console.log('product dans breadcrum', product)
+
 
   return (
     <div className="breadcrum">

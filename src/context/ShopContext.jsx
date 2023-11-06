@@ -5,7 +5,7 @@ export const ShopContext = createContext()
 
 const getDefaultCart = () => {
   let cart = {}
-  for (let index = 0; index < all_product.length; index++) {
+  for (let index = 0; index < all_product.length + 1; index++) {
     cart[index] = 0      
   }
   return cart
@@ -16,9 +16,17 @@ const ShopContextProvider = ({children}) => {
 
   const [cartItems, setCartItems] = useState(getDefaultCart())
 
-  const contextValue = {all_product, cartItems, setCartItems}
 
-  console.log('cartItems', cartItems)
+  const addToCart = (itemId) => {
+    setCartItems((prev) => ({...prev, [itemId]: prev[itemId] + 1}))
+    console.log("cartItems dans addToCart fonction", cartItems)
+  }
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({...prev, [itemId]: prev[itemId] - 1}))
+  }
+
+  const contextValue = {all_product, cartItems, setCartItems, addToCart, removeFromCart}
 
 
   return (
