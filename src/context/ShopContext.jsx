@@ -3,14 +3,17 @@ import { createContext } from "react"
 
 export const ShopContext = createContext()
 
-// const ShopContextProvider = (props) => {
-//   const contextValue = {all_product}
+const ShopContextProvider = (props) => {
+  
+  console.log('props dans ShopContextProvider', props)
+  const contextValue = props
 
-//   return (
-//     <ShopContext.Provider value={{...contextValue}}>
-//       <props.children />
-//     </ShopContext.Provider>
-//   )
-// }
 
-// export default {ShopContextProvider}
+  return (
+    <ShopContext.Provider value={{...contextValue}}>
+      <props.children />
+    </ShopContext.Provider>
+  )
+}
+
+export default {ShopContextProvider}
