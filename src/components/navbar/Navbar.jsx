@@ -27,19 +27,19 @@ const Navbar = () => {
         </li>
         <li onClick={() => setMenu("men")}>
           <Link to={"/men"}>
-            Men 
+            Homme 
           </Link>
           {menu==="men" ? <hr/> : ""}
         </li>
         <li onClick={() => setMenu("women")}>
           <Link to={"/women"}>
-            Women 
+            Femme 
           </Link>
           {menu==="women" ? <hr/> : ""}
         </li>
         <li onClick={() => setMenu("kids")}>
           <Link to={"/kids"}>
-          Kids 
+          Enfant 
           </Link>
           {menu==="kids" ? <hr/> : ""}
         </li>
@@ -47,10 +47,10 @@ const Navbar = () => {
 
       <div className="nav-login-cart">
         <Link to={"/login"}>
-          <button>Login</button>
+          <button>Se Connecter</button>
         </Link>
 
-        <Link to={"/cart"}>
+        <Link to={"/cart"} className='nav-cart-link'>
           <img src={cart_icon} alt="cart" />
           <div className='nav-cart-count'>{ getTotalCartItems() }</div>
         </Link>
