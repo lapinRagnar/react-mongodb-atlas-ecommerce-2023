@@ -9,14 +9,13 @@
   background: linear-gradient(180deg, #6a576b, #e1ffea22 60%);
   margin: auto;
   padding: 0 140px;
-  margin-bottom: 150px;
-  padding-top: 100px;
+  margin-bottom: 15px;
   gap: 30px;
 }
 
 .newsletter h1 {
   color: #454545;
-  font-size: 55px;
+  font-size: 30px;
   font-weight: 600;
 }
 
