@@ -20,16 +20,16 @@ const Footer = () => {
       </ul>
       <div className="footer-social-icon">
         <div className="footer-icons-container">
-          <img src={instagram_icon} alt="instagram" />
+          <img src={instagram_icon} alt="instagram" height={25}/>
         </div>
         <div className="footer-icons-container">
-          <img src={pintester_icon} alt="instagram" />
+          <img src={pintester_icon} alt="instagram" height={25} />
         </div>
         <div className="footer-icons-container">
-          <img src={pintester_icon} alt="instagram" />
+          <img src={pintester_icon} alt="instagram" height={25} />
         </div>
         <div className="footer-icons-container">
-          <img src={whatsapp_icon} alt="instagram" />
+          <img src={whatsapp_icon} alt="instagram" height={25} />
         </div>
       </div>
       <div className="footer-copyright">
