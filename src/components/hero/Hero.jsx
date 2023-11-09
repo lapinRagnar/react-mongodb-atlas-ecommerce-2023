@@ -9,7 +9,7 @@ const Hero = () => {
         <h2>Les nouveaux arrivages</h2>
         <div>
           <div className="hero-hand-icon">
-            <p>Nouveau</p>
+            <p>Nouvelles</p>
             <img src={hand_icon} alt="hand icon"/>
           </div>
           <p>Collections</p>
@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-latest-btn">
-          <div>Dernières collecions</div>
+          <div>Dernières collections</div>
           <img src={arrow_icon} alt="arrow icon" />
         </div>
 
