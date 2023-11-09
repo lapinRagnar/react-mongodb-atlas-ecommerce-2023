@@ -15,15 +15,10 @@ import kids_banner from './components/assets/banner_kids.png'
 // import { ShopContext } from './context/ShopContext'
 // import all_product from './components/assets/all_product'
 
-
 function App() {
-
-
 
   return (
     <div>
-
-      
 
         <BrowserRouter>
         
@@ -45,7 +40,6 @@ function App() {
           <Footer />
         
         </BrowserRouter>
-
   
     </div>
   )
@@ -55,6 +49,6 @@ export default App
 
 
 /* 
-        <ShopContext.Provider value={{men_banner, women_banner, kids_banner, all_product}}>
-      
-        </ShopContext.Provider> */
+  <ShopContext.Provider value={{men_banner, women_banner, kids_banner, all_product}}>
+
+  </ShopContext.Provider> */
